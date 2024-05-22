@@ -49,8 +49,9 @@ def pageRequest(zipcode):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0',
         'Accept-Language': 'en,es-419;q=0.9,es;q=0.8,es-ES;q=0.7,en-GB;q=0.6,en-US;q=0.5,es-CO;q=0.4,es-MX;q=0.3'
     }
+
     try:
-        response = requests.get(target_url,headers=headers)
+        response = requests.get(target_url)
         if response.status_code != 200:
             raise HTTPException(status_code=404,detail=f'Page unavailable')
     except HTTPException as e:
