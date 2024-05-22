@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 async def index():
-    return {'message':'Hello world'}
+    return {'message':'Hello mundo'}
 
 @app.get("/properties/{zipcode}")
 async def getProperties(zipcode:str):
