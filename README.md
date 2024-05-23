@@ -1,2 +1,2 @@
 Retool interface
-Just runt and have fun <3
+Just run it and have fun <3
